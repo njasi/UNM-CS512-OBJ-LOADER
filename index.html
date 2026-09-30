@@ -15,10 +15,11 @@
         <canvas id="glcanvas" width="800" height="450"></canvas>
       </div>
       <p>
-        The <a href="https://en.wikipedia.org/wiki/Wavefront_.obj_file">.obj file format</a> is actually very easy to load.
-      </p>
-      <p>
-        Snippet of the format from wikipedia
+        In this demo we load the <a href="https://graphics.cs.utah.edu/teapot/">utah teapot</a>.
+        Thankfully the <a href="https://en.wikipedia.org/wiki/Wavefront_.obj_file">.obj file format</a> is actually very easy to parse. 
+        This will be a good demo of a lighting model, but for now we set random colors on the vertices so the shape can be observed easily.
+        Especially since in most cases obj files will have only triangulated faces, but note that this is not required by the format. 
+        Below is a snippet of the format from wikipedia.
         <pre>
 # List of geometric vertices, with (x, y, z, [w]) coordinates, w is optional and defaults to 1.0.
 v 0.123 0.234 0.345 1.0
@@ -46,10 +47,6 @@ f ...
 # Line element (see below)
 l 5 8 1 2 4 9
         </pre>
-      </p>
-
-      <p>
-        In this demo we load the <a href="https://graphics.cs.utah.edu/teapot/">utah teapot</a>.
       </p>
     </main>
   </body>
