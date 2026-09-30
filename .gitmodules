@@ -1,0 +1,3 @@
+[submodule "PotatoEngine"]
+	path = PotatoEngine
+	url = git@github.com:njasi/UNM-CS512-PotatoEngine.git

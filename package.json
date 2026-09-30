@@ -1,0 +1,20 @@
+{
+  "name": "unm-cs-512-obj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "dependencies": {
+    "PotatoEngine": "file:PotatoEngine"
+  }
+}
