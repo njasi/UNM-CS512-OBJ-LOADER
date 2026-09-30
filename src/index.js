@@ -1,5 +1,4 @@
 import { Scene, Shader, objects, Controls } from "PotatoEngine";
-import { rgba } from "PotatoEngine/src/objects";
 
 // try to plug in new scene abstraction
 const scene = new Scene("glcanvas");
@@ -12,7 +11,7 @@ scene.addShader(
     "basicVertex",
     scene.gl.VERTEX_SHADER,
     "",
-    "/PotatoEngine/src/shaders/vertex.vert",
+    "./PotatoEngine/src/shaders/vertex.vert",
   ),
 );
 
@@ -21,7 +20,7 @@ scene.addShader(
     "basicFragment",
     scene.gl.FRAGMENT_SHADER,
     "",
-    "/PotatoEngine/src/shaders/fragment.frag",
+    "./PotatoEngine/src/shaders/fragment.frag",
   ),
 );
 
