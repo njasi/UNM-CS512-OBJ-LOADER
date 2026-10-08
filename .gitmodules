@@ -1,3 +1,6 @@
 [submodule "PotatoEngine"]
 	path = PotatoEngine
 	url = git@github.com:njasi/UNM-CS512-PotatoEngine.git
+[submodule "common"]
+	path = common
+	url = https://github.com/njasi/UNM-CS512-COMMON.git

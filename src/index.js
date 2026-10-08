@@ -1,4 +1,5 @@
 import { Scene, Shader, objects, Controls } from "PotatoEngine";
+const loader = document.getElementById("loader-wrapper");
 
 // try to plug in new scene abstraction
 const scene = new Scene("glcanvas");
@@ -48,7 +49,7 @@ function initSceneObjects() {
 async function main() {
   await objects.cacheOBJ("./public/utah_teapot.obj", "teapot");
   await scene.loadShaders();
-
+  loader.className = ""
   scene.addProgram("basic", "basicVertex", "basicFragment");
 
   initSceneObjects();
