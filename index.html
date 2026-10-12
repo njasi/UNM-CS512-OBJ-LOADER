@@ -77,14 +77,38 @@
           <div class="spinner"></div>
         </div>
       </div>
+
+      <div class="controls">
+        <label>
+          Spin Teapot
+          <input id="spincheck" name="spin" type="checkbox" checked="true" />
+        </label>
+
+        <label>
+          Shader Program
+          <select id="shaderSelector">
+            <option value="phong">Phong Lighting</option>
+            <option value="basic">Random Colors</option>
+          </select>
+        </label>
+      </div>
     </div>
+    <p>Controls and some things to try:</p>
+      <ul>
+        <li>
+          Rotate the scene with your mouse and move with WS + the arrow keys.
+        </li>
+        <li>
+          Switch to the basic shader program to visualize vertices with random colors.
+        </li>
+      </ul>
     <p>
       Thankfully the .obj file format is actually very
       easy to parse.
       Especially since in most cases obj files will have only triangulated faces, but note that this is not required by
       the format.
-      This will be a good demo of a lighting model, but for now we set random colors on the vertices so the shape can be
-      observed easily.
+      This is a good demo for lighting models, additionally we can optionally set random colors on the vertices so the shape can be
+      observed easily without lighting.
       Below is a snippet of the format from wikipedia.
     <pre>
 # List of geometric vertices, with (x, y, z, [w]) coordinates, w is optional and defaults to 1.0.
